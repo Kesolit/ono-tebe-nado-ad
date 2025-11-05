@@ -10,7 +10,6 @@ html, body {
     overflow-x: hidden;
 }
 
-
 .cover {
     background-image: url(../images/cover.jpg);
     background-size: cover;
@@ -116,15 +115,14 @@ html, body {
 
 
 .header__logo {
-    display: grid;
-    align-content: start;
-    width: 148px;
-    height: 105px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 140px;
 }
 
 .header__logo-image {
-    display: block;
-    align-content: start;
+    width: 100%;
 }
 
 .align-text,
@@ -136,6 +134,30 @@ html, body {
     font-style: normal;
     font-weight: 700;
     letter-spacing: 30px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  line-height: 1;
+  text-align: center;
+}
+
+.aligned-text_right {
+  line-height: 1;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
+
+.remove-spacing {
+  letter-spacing: normal;
 }
 
 .align-text {
@@ -231,18 +253,20 @@ html, body {
     position: relative;
 }
 
+.remove-spacing {
+  letter-spacing: normal;
+}
+
 .lot-overlay {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 2;
     min-height: 450px;
     height: 100%;
     padding: 50px 40px;
     width: 100%;
     box-sizing: border-box;
     z-index: 2;
-    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
