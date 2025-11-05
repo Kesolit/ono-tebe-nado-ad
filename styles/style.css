@@ -154,12 +154,6 @@ html, body {
   letter-spacing: 60px;
 }
 
-/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
-
-.remove-spacing {
-  letter-spacing: normal;
-}
-
 .align-text {
     text-align: start;
     margin: 0px 50px;
