@@ -41,19 +41,25 @@ html, body {
 
 .header {
     display: grid;
-    margin: 92px 50px 96px 50px;
-    grid-template-columns: 3.9fr 0.9fr 3.9fr;
+    grid-template-columns: 1.51fr 2fr 1.5fr;
+    align-items: center;
+    padding: 92px 51px 89px;
 }
 
 .nav__links-list {
     display: flex;
-    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
 }
 
 .nav__links-list-main {
     display: flex;
-    align-items: center;
     gap: 32px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 100px;
 }
 
 .nav__links-list-item_no-bullit,
@@ -81,8 +87,9 @@ html, body {
 
 .header__address {
     display: flex;
-    align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: 400px;
 }
 
 .contacts {
@@ -115,10 +122,10 @@ html, body {
 
 
 .header__logo {
-    display: block;
-    justify-self: center;
-    align-self: center;
-    width: 140px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 100px;
 }
 
 .header__logo-image {
